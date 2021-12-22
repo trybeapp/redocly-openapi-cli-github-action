@@ -17,4 +17,4 @@ jobs:
 
       - name: check result
         run: |
-          git diff --no-index test/petstore-bundled.yaml test/petstore.yaml
+          git diff --no-index test/petstore-bundled.yaml test/petstore-full.yaml
