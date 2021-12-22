@@ -6,8 +6,8 @@
 
 ### `args`
 
-The arguments to be provided to the `redoc-cli` command.
-By default this is empty so that `redoc-cli` will print a note about its correct usage.
+The arguments to be provided to the redocly `openapi` cli command.
+By default this is empty so that redocly `openapi` cli will print a note about its correct usage.
 
 ## :bulb: Quick Start
 
