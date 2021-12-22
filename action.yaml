@@ -1,0 +1,15 @@
+name: 'OpenAPI CLI Github Action'
+description: 'A wrapper around the redocly openapi-cli for linting and bundling OpenAPI definitions.'
+inputs:
+  args:
+    description: 'The arguments to pass to the openapi-cli'
+    required: false
+    default: ''
+outputs:
+  output:
+    description: 'The output of the openapi-cli command'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
