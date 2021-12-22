@@ -13,8 +13,7 @@ jobs:
       - name: test bundle
         uses: ./
         with:
-          base-spec: test/petstore.yaml
-          bundled-spec: test/petstore-bundled.yaml
+          args: bundle test/petstore.yaml -o test/petstore-bundled.yaml
 
       - name: check result
         run: |
