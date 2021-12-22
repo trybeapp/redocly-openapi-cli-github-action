@@ -1,14 +1,11 @@
 #!/bin/sh
+set -e
+set -o pipefail
 
 cd /github/workspace
 
 echo "openapi-cli version: $(openapi --version)"
 
-output=$(openapi $*)
-exitcode=$?
+output=$(openapi $1)
 
 echo "::set-output name=output::$output"
-
-if [ $exitcode -ne 0 ]; then
-  exit 1
-fi
