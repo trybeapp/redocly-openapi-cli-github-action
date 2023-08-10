@@ -1,16 +1,16 @@
-name: 'OpenAPI CLI Github Action'
-description: 'A wrapper around the redocly openapi-cli for linting and bundling OpenAPI definitions.'
+name: 'Redocly CLI Github Action'
+description: 'A wrapper around the Redocly cli for linting and bundling OpenAPI definitions.'
 branding:
   icon: align-justify
   color: 'purple'
 inputs:
   args:
-    description: 'The arguments to pass to the openapi-cli'
+    description: 'The arguments to pass to the redocly'
     required: false
     default: ''
 outputs:
   output:
-    description: 'The output of the openapi-cli command'
+    description: 'The output of the redocly command'
 runs:
   using: 'docker'
   image: 'Dockerfile'
