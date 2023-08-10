@@ -1,4 +1,4 @@
-FROM redocly/openapi-cli
+FROM redocly/cli
 
 COPY LICENSE.md README.md /
 

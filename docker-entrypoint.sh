@@ -4,8 +4,8 @@ set -o pipefail
 
 cd /github/workspace
 
-echo "openapi-cli version: $(openapi --version)"
+echo "redocly version: $(redocly --version)"
 
-output=$(openapi $1)
+output=$(redocly $1)
 
 echo "::set-output name=output::$output"
